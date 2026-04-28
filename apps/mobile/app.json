@@ -1,0 +1,8 @@
+{
+  "expo": {
+    "name": "Karigai",
+    "slug": "karigai-mobile",
+    "scheme": "karigai",
+    "plugins": ["expo-router"]
+  }
+}

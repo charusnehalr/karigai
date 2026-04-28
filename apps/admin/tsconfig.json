@@ -1,0 +1,5 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "jsx": "preserve", "moduleResolution": "Bundler", "allowJs": true },
+  "include": ["app/**/*.ts", "app/**/*.tsx", ".next/types/**/*.ts"]
+}
