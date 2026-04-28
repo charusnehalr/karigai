@@ -2,9 +2,13 @@
   "name": "@karigai/api",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "lint": "echo 'api lint pending scaffold'",
-    "typecheck": "echo 'api typecheck pending scaffold'",
-    "test": "echo 'api tests pending scaffold'"
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
   }
 }

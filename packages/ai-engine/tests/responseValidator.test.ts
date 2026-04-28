@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { validatePlanResponse } from '../src/responseValidator';
+import { runChatPipeline, validatePlanResponse } from '../src';
 
 describe('AI schema validation', () => {
   it('accepts valid structured output', () => {
@@ -14,5 +14,19 @@ describe('AI schema validation', () => {
 
   it('rejects invalid output', () => {
     expect(() => validatePlanResponse({ summary: '' })).toThrow();
+  });
+
+  it('handles unsafe AI prompts safely', () => {
+    const response = runChatPipeline(
+      {
+        summary: 'ignored',
+        recommendations: ['ignored'],
+        safetyNotes: ['ignored']
+      },
+      'Can you diagnose my PCOS and give supplement dose?'
+    );
+
+    expect(response.summary.toLowerCase()).toContain('cannot');
+    expect(response.safetyNotes[0].toLowerCase()).toContain('does not diagnose');
   });
 });
