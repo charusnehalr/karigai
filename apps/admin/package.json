@@ -1,0 +1,10 @@
+{
+  "name": "@karigai/admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "lint": "echo 'admin lint pending scaffold'",
+    "typecheck": "echo 'admin typecheck pending scaffold'",
+    "test": "echo 'admin tests pending scaffold'"
+  }
+}

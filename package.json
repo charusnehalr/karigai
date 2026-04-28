@@ -1,8 +1,15 @@
 {
   "name": "karigai",
   "private": true,
-  "type": "module",
+  "packageManager": "pnpm@10.10.0",
   "scripts": {
-    "test:rules": "node --test packages/rule-engine/test/high-risk-rules.test.js"
+    "lint": "pnpm -r --if-present lint",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8",
+    "zod": "^3.23.8"
   }
 }

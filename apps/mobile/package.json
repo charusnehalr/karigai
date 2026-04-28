@@ -1,0 +1,10 @@
+{
+  "name": "@karigai/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "lint": "echo 'mobile lint pending scaffold'",
+    "typecheck": "echo 'mobile typecheck pending scaffold'",
+    "test": "echo 'mobile tests pending scaffold'"
+  }
+}
