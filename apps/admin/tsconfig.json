@@ -1,7 +1,5 @@
 {
   "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "rootDir": "src"
-  },
-  "include": ["src", "tests"]
+  "compilerOptions": { "jsx": "preserve", "moduleResolution": "Bundler", "allowJs": true },
+  "include": ["app/**/*.ts", "app/**/*.tsx", ".next/types/**/*.ts"]
 }

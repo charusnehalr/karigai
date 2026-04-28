@@ -1,0 +1,2 @@
+-- Initial schema migration placeholder generated for PostgreSQL.
+-- Run `pnpm --filter @karigai/api prisma:migrate` to apply against your DB.
