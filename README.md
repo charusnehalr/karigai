@@ -1,74 +1,23 @@
-# Karigai Monorepo
+# karigai monorepo
 
-Production-oriented starter monorepo for Karigai using **pnpm + Turborepo + TypeScript**.
+Initial incremental scaffold for the karigai wellness platform.
 
-## Apps
+## Included in this increment
 
-- `apps/mobile` — Expo React Native app (Expo Router route skeleton + design system preview)
-- `apps/admin` — Next.js admin placeholder
-- `apps/api` — NestJS API placeholder with Prisma schema and seed script
+- Monorepo workspace layout for mobile, admin, and api apps.
+- Core shared packages: design tokens, UI stubs, shared types, health engine, rule engine, ai engine.
+- Unit tests for baseline health calculations, safety rules, and AI schema validation.
+- Product guardrails in `AGENTS.md`.
 
-## Packages
+## Note on design prototype
 
-- `packages/types`
-- `packages/design-tokens`
-- `packages/ui`
-- `packages/health-engine`
-- `packages/rule-engine`
-- `packages/ai-engine`
+The expected design prototype files were not present at implementation time and have been created as placeholders under `docs/design-prototype/` so the structure is in place for the next increment.
 
-## Quick start
+## Commands
 
 ```bash
 pnpm install
-pnpm dev
-```
-
-### Run one app
-
-```bash
-pnpm --filter @karigai/mobile dev
-pnpm --filter @karigai/admin dev
-pnpm --filter @karigai/api dev
-```
-
-### Quality commands
-
-```bash
 pnpm lint
 pnpm typecheck
 pnpm test
 ```
-
-## Mobile routes scaffolded
-
-- `/welcome`
-- `/auth/sign-in`
-- `/auth/sign-up`
-- `/onboarding`
-- `/analysis`
-- `/(tabs)/today`
-- `/(tabs)/cycle`
-- `/(tabs)/meals`
-- `/(tabs)/move`
-- `/(tabs)/me`
-- `/chat`
-- `/privacy`
-- `/consent`
-- `/design-system`
-
-## Prisma
-
-Schema and seed file live in `apps/api/prisma`.
-Set `DATABASE_URL` for PostgreSQL before running migrations.
-
-```bash
-pnpm --filter @karigai/api prisma:generate
-pnpm --filter @karigai/api prisma:migrate
-pnpm --filter @karigai/api prisma:seed
-```
-
-## Notes
-
-- This repo intentionally includes no full product features yet.
-- Onboarding/auth/consent are scaffold foundations with placeholder endpoints and screens.

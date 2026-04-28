@@ -1,23 +1,10 @@
 {
   "name": "@karigai/admin",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.1",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "lint": "tsc --noEmit",
-    "typecheck": "tsc --noEmit",
-    "test": "echo 'No tests for admin'"
-  },
-  "dependencies": {
-    "next": "15.0.3",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
-    "@karigai/design-tokens": "workspace:*"
-  },
-  "devDependencies": {
-    "typescript": "^5.6.3",
-    "@types/react": "^18.3.12",
-    "@types/node": "^22.10.1"
+    "lint": "echo 'admin lint pending scaffold'",
+    "typecheck": "echo 'admin typecheck pending scaffold'",
+    "test": "echo 'admin tests pending scaffold'"
   }
 }
