@@ -1,0 +1,8 @@
+{
+  "name": "karigai",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:rules": "node --test packages/rule-engine/test/high-risk-rules.test.js"
+  }
+}
